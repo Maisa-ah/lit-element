@@ -3,20 +3,38 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>&lt;my-element> Demo</title>
+    <title>Demo</title>
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../my-element.js"></script>
+    <script type="module" src="./Components/my-element.js"></script>
+    <script type="module" src="./Components/barChart.js"></script>
+    <script type="module" src="./Components/Card.js"></script>
+    <link rel="stylesheet" href="dev.css">
     <style>
-      p {
+      /* p {
         border: solid 1px blue;
         padding: 8px;
-      }
+      } */
     </style>
   </head>
   <body>
-    <my-element>
-      <p>This is child content</p>
-    </my-element>
+    <div class="my-element-container">
+      <my-element>
+        <p slot="two">Include me in slot "two".</p>
+      </my-element>
+
+      <my-element>
+        <p slot="one">Include me in slot "one".</p>
+        <p slot="nope">This one will not render at all.</p>
+        <p>No default slot, so this one won't render either.</p>
+      </my-element>
+    </div>
+    <div class="my-card-container">
+      <my-card name="This card" img="./Images/placeholder.jpeg" url=""></my-card>
+      <my-card name="hey" img="./Images/placeholder.jpeg" url=""></my-card>
+      <my-card name="new card" img="./Images/placeholder.jpeg" url=""></my-card>
+    </div>
+    <div id="id"></div>
+    <!-- <div>hey</div> -->
   </body>
 </html>

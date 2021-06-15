@@ -19,6 +19,7 @@
     "docs:build": "rollup -c --file docs/my-element.bundled.js",
     "docs:assets": "cp node_modules/prismjs/themes/prism-okaidia.css docs/",
     "docs:serve": "wds --root-dir=docs --node-resolve --watch",
+    "dev:serve": "wds --root-dir=dev --node-resolve --watch",
     "analyze": "wca analyze \"**/*.js\" --outFile custom-elements.json",
     "serve": "wds --watch",
     "test": "wtr",
@@ -34,8 +35,13 @@
   "author": "Google LLC",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "chart.js": "^3.3.2",
+    "d3": "^7.0.0",
     "lit": "^2.0.0-rc.1",
-    "lit-element": "^3.0.0-rc.1"
+    "lit-element": "^3.0.0-rc.2",
+    "my-element": "^1.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
@@ -55,6 +61,7 @@
     "@webcomponents/webcomponentsjs": "^2.5.0",
     "babel-eslint": "^10.1.0",
     "deepmerge": "^4.2.2",
+    "es-dev-server": "^2.1.0",
     "eslint": "^6.8.0",
     "lit-analyzer": "^1.1.10",
     "mocha": "^7.1.1",

@@ -1,0 +1,22 @@
+p {
+  border: solid 1px blue;
+  padding: 8px;
+}
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.my-element-container{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.my-card-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+my-card{
+  display: flex;
+  justify-content: center;
+}
