@@ -7,7 +7,6 @@
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
     <script type="module" src="./Components/my-element.js"></script>
-    <script type="module" src="./Components/barChart.js"></script>
     <script type="module" src="./Components/Card.js"></script>
     <link rel="stylesheet" href="dev.css">
     <style>
@@ -19,7 +18,7 @@
   </head>
   <body>
     <div class="my-element-container">
-      <my-element>
+      <!-- <my-element>
         <p slot="two">Include me in slot "two".</p>
       </my-element>
 
@@ -33,8 +32,14 @@
       <my-card name="This card" img="./Images/placeholder.jpeg" url=""></my-card>
       <my-card name="hey" img="./Images/placeholder.jpeg" url=""></my-card>
       <my-card name="new card" img="./Images/placeholder.jpeg" url=""></my-card>
-    </div>
+    </div> -->
     <div id="id"></div>
+    <svg width="500" height="300"></svg>
+    <script type="module" src="./Components/test-chart.js"></script>
+    <script type="module" src="./Components/spider-chart.js"></script>
+    <!-- <bar-chart></bar-chart> -->
+    <spider-chart></spider-chart>
+    <!-- <script src="index.js"></script> -->
     <!-- <div>hey</div> -->
   </body>
 </html>
